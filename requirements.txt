@@ -1,0 +1,4 @@
+wheel
+ipython
+jupyter
+ipyleaflet  # https://github.com/jupyter-widgets/ipyleaflet
