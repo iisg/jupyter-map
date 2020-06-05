@@ -32,6 +32,14 @@ Powinno ono automatycznie otworzyć domyślną przeglądarkę na stronie listy p
 
 ![notebook_list](img/notebook_list.png)
 
+W widoku konkretnego notatnika należy kliknąć opcję `Run` z menu, aby uruchomić/wygenerować wyniki. Wyniki map nie są zapisywane na stałe, więc przy każdym uruchomieniu notatnika trzeba je generować od nowa.
+
+![notebook_run](img/notebook_run.png)
+
+Notatniki z wynikami można eksportować do różnych formatów. Odpowiednie opcje znajdują się w menu `File`.
+
+![image-20200605190912065](img/notebook_eksport.png)
+
 ## Przykłady
 
 `ProstaMapa.ipynb` - przykład z mapą wycentrowaną nad Krakowem. Można zmodyfikować dane w zmiennej `center` oraz `zoom` przekazany do obiektu mapy aby osiągnąć inne centrowanie i przybliżenie. 
