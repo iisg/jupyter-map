@@ -2,6 +2,9 @@
 
 Wizualizacje z użyciem danych geograficznych w Jupyter Notebook.
 
+## Wymagania systemowe
+
+Zainstalowany interpreter języka Python 3.6+ https://www.python.org/
 
 ## Instalacja 
 
@@ -13,6 +16,7 @@ Instalacje wystarczy wykonać raz, przed pierwszym uruchomieniem projektu.
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+_Jeśli powyższe polecenie pip nie zostaje rozpoznane przez system można spróbować `python -m pip install`._
 
 Wszystkie wymagane biblioteki zostały wylistowane w pliku `requirements.txt`.
 
@@ -26,11 +30,31 @@ jupyter notebook
 
 Powinno ono automatycznie otworzyć domyślną przeglądarkę na stronie listy plików tego repozytorium (jak na poniższym obrazie). Należy kliknąć notatnik (pliki z ikoną notatnika i rozszerzeniem pliku .ipynb), aby go otworzyć.
 
-![image-20200605181619441](img/image-20200605181619441.png)
+![notebook_list](img/notebook_list.png)
+
+## Przykłady
+
+`ProstaMapa.ipynb` - przykład z mapą wycentrowaną nad Krakowem. Można zmodyfikować dane w zmiennej `center` oraz `zoom` przekazany do obiektu mapy aby osiągnąć inne centrowanie i przybliżenie. 
+
+Więcej przykładów i dokumentacja biblioteki do rysowania map dostępne: https://ipyleaflet.readthedocs.io/en/latest/api_reference/map.html#usage
+
+![simple_map](img/simple_map.png)
+
+---
+
+`MapaZPowiatami.ipynb` - przykład, gdzie mapa jest wycentrowana na Polsce. Dodatkowo jest tu nałożona siatka powiatów wczytana z pliku `powiaty-min.geojson`.
+
+Można wykorzystać inne siatki danych, jednak musza być w formacie GeoJSON aby ten przykład działał. Ten zestaw danych został zaczerpnięty z repozytorium: https://github.com/ppatrzyk/polska-geojson
+
+Dodatkowo - w tym przykładzie można najechać myszką na powiat a pod mapą wyświetli się nazwa powiatu. Aby dodać dodatkowe informacje, które mogłyby wyświetlać się po najechaniu na powiat można zmodyfikować plik `powiaty-min.geojson`.
+
+Inne przykłady wykorzystania GeoJSON: https://ipyleaflet.readthedocs.io/en/latest/api_reference/geo_json.html
+
+![map_with_county](img/map_with_county.png)
 
 
 
 ### Materiały dodatkowe
 
-https://ipyleaflet.readthedocs.io/en/latest/api_reference/basemaps.html
+- https://ipyleaflet.readthedocs.io/en/latest/api_reference/basemaps.html
 
