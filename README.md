@@ -13,7 +13,7 @@ Aby uruchomić notatniki Jupyter należy zainstalować potrzebne zależności. M
 Instalacje wystarczy wykonać raz, przed pierwszym uruchomieniem projektu.
 
 ```
-pip install --upgrade pip
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 _Jeśli powyższe polecenie pip nie zostaje rozpoznane przez system można spróbować `python -m pip install`._
